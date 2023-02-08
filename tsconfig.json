@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "dist",
+        "module": "ESNext",
+        "target": "es2016",
+        "lib": ["DOM", "ESNext", "ES2015.Promise"],
+        "moduleResolution": "node",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "types": ["vite/client"],
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": [
+        "auto-imports.d.ts",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "src/services/pecs.service.js",
+        "src/stores/binnacle.js"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
